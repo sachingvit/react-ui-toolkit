@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component > Label render componet 1`] = `null`;
+
+exports[`Component > Label render without label 1`] = `
+<div>
+  <label
+    id="label-undefined"
+  />
+</div>
+`;
