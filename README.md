@@ -1,5 +1,12 @@
 # React-UI-Toolkit
 
+```jsx
+import React from 'react'
+
+export default () => { 
+    return (<input type="text" placeholder="Enter ..." />)
+}    
+```
 
 # Getting Started with Create React App
 
