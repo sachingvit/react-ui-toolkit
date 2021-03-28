@@ -1,4 +1,5 @@
 import React from 'react'
+// import PropTypes from 'prop-type'
 import Label from './../Label/Label'
 import NoContent from './../NoContent/NoContent'
 
@@ -38,4 +39,32 @@ function LableInput(props) {
     )
 }
 
+// LableInput.prototype = {
+//     id: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number
+//     ]),
+//     layoutClasses: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number,
+
+//     ]),
+//     labelClasses: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number,
+//     ]),
+//     // inline = false,
+//     fieldClasses: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number,
+//     ]),
+//     tyep: PropTypes.string,
+//     show: PropTypes.bool,
+//     label: PropTypes.oneOfType([
+//         PropTypes.string,
+//         PropTypes.number,
+//     ])
+// }
+
 export default LableInput
+export { LableInput }

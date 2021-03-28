@@ -4,7 +4,7 @@ import NoContent from '../NoContent/NoContent'
 function Label(props) {
     const { layoutClasses, label, labelClasses, id } = props
 
-    if (label || label === "") {
+    if (!label || label === "") {
         return <NoContent />
     }
 
@@ -15,5 +15,5 @@ function Label(props) {
     )
 }
 
-//export Label;
 export default Label
+export { Label };

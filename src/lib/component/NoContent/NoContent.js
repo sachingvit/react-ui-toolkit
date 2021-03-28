@@ -4,3 +4,4 @@ function NoContent() {
 }
 
 export default NoContent
+export { NoContent }
