@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Avatar } from "./lib/component/Avatar/Avatar"
 import { LableInput } from './lib/component/LabelInput/LableInput'
+import { Badge } from './lib/component/Badge/Badge'
 
 
 const Password = () => <div toolkit-data-field='custom-component'>Password</div>
@@ -31,16 +32,28 @@ function App() {
     },
   ]
 
+  const badgeProps = {
+
+  }
+
   return (
     <div className="App">
-      <div className="demo-content-area">
-        <ComponentNameDispay name="LabelInput" />
-        <LableInput {...labelProps} />
-      </div>
+
       <div className="demo-content-area">
         <ComponentNameDispay name="Avatar" />
         {avatarProps.map(prop => <Avatar {...prop} />)}
       </div>
+
+      <div className="demo-content-area">
+        <ComponentNameDispay name="Badge" />
+        <Badge {...badgeProps}>Badege Text</Badge>
+      </div>
+
+      <div className="demo-content-area">
+        <ComponentNameDispay name="LabelInput" />
+        <LableInput {...labelProps} />
+      </div>
+
     </div>
   );
 }
