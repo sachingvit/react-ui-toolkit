@@ -5,7 +5,7 @@ import { LableInput } from './lib/component/LabelInput/LableInput'
 
 
 const Password = () => <div toolkit-data-field='custom-component'>Password</div>
-
+const ComponentNameDispay = ({ name }) => <p><span>Component</span> {name}</p>
 function App() {
   const labelProps = {
     id: (new Date()).getTime(),
@@ -33,8 +33,14 @@ function App() {
 
   return (
     <div className="App">
-      <LableInput {...labelProps} />
-      {avatarProps.map(prop => <Avatar {...prop} />)}
+      <div className="demo-content-area">
+        <ComponentNameDispay name="LabelInput" />
+        <LableInput {...labelProps} />
+      </div>
+      <div className="demo-content-area">
+        <ComponentNameDispay name="Avatar" />
+        {avatarProps.map(prop => <Avatar {...prop} />)}
+      </div>
     </div>
   );
 }

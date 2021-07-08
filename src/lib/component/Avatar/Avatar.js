@@ -26,7 +26,12 @@ function Avatar(props) {
         return (
             <div>
                 <div className={classes} data-image-src="/broken-image-src" title={title}>
-                    <img onError={imageErrorHandler} src={imageSrc} className="image-avatar" style={{ display: "block" }} alt={title} />
+                    <img
+                        onError={imageErrorHandler}
+                        src={imageSrc}
+                        className="image-avatar"
+                        style={{ display: "block" }}
+                        alt={title} />
                 </div>
             </div>
         )
@@ -35,7 +40,10 @@ function Avatar(props) {
         return (
             <div>
                 <div className={classes} title={title}>
-                    <Typography text={avatarInitials} classes="text-avatar" htmlElement="span" />
+                    <Typography
+                        text={avatarInitials}
+                        classes="text-avatar"
+                        htmlElement="span" />
                 </div>
             </div>
         )
@@ -47,14 +55,16 @@ Avatar.defaultProps = {
     type: 'box',
     text: '',
     avatarImage: '',
-    avatarImageAlt: ''
+    avatarImageAlt: '',
+    size: 'small'
 }
 
 Avatar.propTypes = {
     text: PropTypes.string,
     avatarImageAlt: PropTypes.string,
     avatarImage: PropTypes.oneOf([PropTypes.string, PropTypes.instanceOf(React.Component)]),
-    type: PropTypes.oneOf(['box', 'round'])
+    type: PropTypes.oneOf(['box', 'round']),
+    size: PropTypes.oneOf(['small', 'medium', 'large'])
 }
 
 export { Avatar }
