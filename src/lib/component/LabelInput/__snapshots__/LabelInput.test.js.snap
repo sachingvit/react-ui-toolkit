@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component > LabelInput render 1`] = `
+<div
+  className="label-class"
+>
+  <div />
+  <div
+    className="field-class"
+    data-ui-toolkit-id="input-field"
+  >
+    <input
+      id="input-field"
+      onChange={[Function]}
+      onFocus={[Function]}
+      type="input"
+    />
+  </div>
+</div>
+`;
+
+exports[`component > LabelInput render as show false 1`] = `null`;

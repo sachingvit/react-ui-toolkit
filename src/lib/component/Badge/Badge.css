@@ -1,0 +1,11 @@
+.badge {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+a.badge {
+    text-decoration: none;
+}
