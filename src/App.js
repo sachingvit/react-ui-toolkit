@@ -47,6 +47,7 @@ function App() {
       <div className="demo-content-area">
         <ComponentNameDispay name="Badge" />
         <Badge {...badgeProps}>Badege Text</Badge>
+        <Badge {...badgeProps} href="https://www.google.com">Badege Text</Badge>
       </div>
 
       <div className="demo-content-area">
