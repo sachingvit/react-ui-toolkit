@@ -16,7 +16,7 @@
 -   [&check;] Type setup 
       ## Options `primary | secondary | default | success | danger | warning`
       ## Default `primary`
--   [&cross;] Variant setup
+-   [&check;] Variant setup
 -   [&cross;] Add accessibility     
 -   [&cross;] Test cases
 
