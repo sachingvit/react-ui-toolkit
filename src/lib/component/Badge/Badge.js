@@ -1,16 +1,14 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import './Badge.css'
 
 
-function Badge(props) {
+const Badge = WithBadge(function Badge(props) {
     let {
         tag: Tag,
         text: badgeText,
-        size,
-        variant,
         children = null,
-        href
+        href,
+        classes
     } = props;
 
     const additionalProps = {}
@@ -21,24 +19,35 @@ function Badge(props) {
     }
 
     return (
-        <Tag className={`badge`} {...additionalProps}>
+        <Tag className={classes} {...additionalProps}>
             {children || badgeText}
         </Tag>
     )
+})
+
+
+function WithBadge(Component) {
+    return (props) => {
+        const classes = `${props.className || Component.name.toLowerCase()} ${props.type}`
+        return (
+            <Component {...props} classes={classes} />
+        )
+    }
 }
 
 Badge.defaultProps = {
-    tag: 'span',
-    text: '',
+    href: "",
     size: "small",
+    tag: 'span',
+    type: "primary",
+    text: '',
     variant: 'button',
-    href: ""
 }
 
 Badge.propTypes = {
     href: PropTypes.string,
-    tag: PropTypes.string
-
+    tag: PropTypes.string,
+    type: PropTypes.oneOf(['primary', 'secondary', 'success', 'danger', 'warning', 'default'])
 }
 
 export default Badge
