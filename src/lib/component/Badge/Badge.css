@@ -1,11 +1,65 @@
 .badge {
-    border: 1px solid #000;
     border-radius: 5px;
-    padding: 5px;
+    padding: 8px;
     margin-left: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 a.badge {
     text-decoration: none;
+}
+
+.badge.primary {
+    color: white;
+    background-color: rgb(21, 160, 225);
+}
+
+.badge.primary:hover {
+    background-color: rgb(9, 149, 214);
+}
+
+.badge.secondary {
+    color: white;
+    background-color: rgb(80, 81, 82);
+}
+
+.badge.secondary:hover {
+    background-color: rgb(31, 32, 32);
+}
+
+.badge.default {
+    border: 1px solid rgb(90, 87, 87);
+    background-color: rgb(255, 255, 255);
+    color: #323232;
+}
+
+.badge.default:hover {
+    background-color: rgb(238, 232, 232);
+}
+
+.badge.success {
+    background-color: rgb(68, 131, 52);
+    color: #fff;
+}
+
+.badge.success:hover {
+    background-color: rgb(61, 126, 45);
+}
+
+.badge.danger {
+    background-color: rgb(211, 52, 52);
+    color: #fff;
+}
+
+.badge.danger:hover {
+    background-color: rgb(209, 38, 38);
+}
+
+.badge.warning {
+    background-color: rgb(250, 237, 60);
+    color: #323232;
+}
+
+.badge.warning:hover {
+    background-color: rgb(225, 213, 34);
 }
