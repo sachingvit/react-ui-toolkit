@@ -30,6 +30,13 @@ export const avatarComponent = {
     ]
 }
 
+export const alertComponent = {
+    name: 'Alert',
+    props: [
+
+    ]
+}
+
 export const badgeComponent = {
     name: "Badge",
     props: [

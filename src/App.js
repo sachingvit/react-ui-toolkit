@@ -4,8 +4,8 @@ import React from 'react'
 // import { LableInput } from './lib/component/LabelInput/LableInput'
 // import { Badge } from './lib/component/Badge/Badge'
 
-import { Avatar, Badge, LableInput } from './lib/component'
-import { avatarComponent, labelComponent, badgeComponent } from './docProps'
+import { Avatar, Alert, Badge, LableInput } from './lib/component'
+import { alertComponent, avatarComponent, labelComponent, badgeComponent } from './docProps'
 
 
 const DemoSection = ({ children }) => {
@@ -18,6 +18,13 @@ function App() {
 
   return (
     <div className="App">
+
+      <div className="demo-content-area">
+        <ComponentNameDispay name={`${alertComponent?.name}`} />
+        <DemoSection>
+          <Alert {...alertComponent?.props} />
+        </DemoSection>
+      </div>
 
       <div className="demo-content-area">
         <ComponentNameDispay name={`${avatarComponent?.name}`} />
