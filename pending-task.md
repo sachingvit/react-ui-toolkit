@@ -1,11 +1,12 @@
 # Avatar
+-   [&check;] Setup
 -   [&cross;] Size prop introduce
 -   [&cross;] overlap feature
 -   [&cross;] Test cases
 
 # Alert 
--    [&cross;] Setup
--    [&cross;] Variant setup
+-    [&check;] Setup
+-    [&check;] Variant setup
 -    [&cross;] Control close events (Auto-hide/ Manual)
 -    [&cross;] Test cases
 

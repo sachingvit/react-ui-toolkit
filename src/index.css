@@ -26,6 +26,10 @@
             color: rgba(26, 24, 24, 0.959);
         }
         
+        div.demo-content-area .demo-section.no-flex {
+            display: block;
+        }
+        
         div.demo-content-area .demo-section {
             display: flex;
             /* max-width: 25%;

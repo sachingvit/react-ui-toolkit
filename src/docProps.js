@@ -33,7 +33,34 @@ export const avatarComponent = {
 export const alertComponent = {
     name: 'Alert',
     props: [
-
+        undefined,
+        {
+            type: "primary",
+            text: "Custom Primary Badge"
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "secondary"
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "default"
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "success"
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "danger"
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "warning"
+        },
+        {
+            type: "primary"
+        }
     ]
 }
 
