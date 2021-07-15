@@ -36,18 +36,15 @@ export const alertComponent = {
         undefined,
         {
             type: "primary",
-            text: "Custom Primary Badge"
-        },
-        {
-            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
-            type: "secondary"
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            closeEvent: (e) => console.log(`close event `, e)
         },
         {
             text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
             type: "default"
         },
         {
-            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
             type: "success"
         },
         {

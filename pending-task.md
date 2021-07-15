@@ -7,7 +7,8 @@
 # Alert 
 -    [&check;] Setup
 -    [&check;] Variant setup
--    [&cross;] Control close events (Auto-hide/ Manual)
+-    [&check;] Control close events (Manual)
+-    [&cross;] Control close events (Auto-hide)
 -    [&cross;] Test cases
 
 

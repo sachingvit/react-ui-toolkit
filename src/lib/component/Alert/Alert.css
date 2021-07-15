@@ -1,9 +1,16 @@
 .alert {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: 1rem;
     margin: 1rem;
     width: 98%;
     min-width: 98%;
     border: 1px solid #c0c0c0;
     border-radius: 10px;
+}
+
+.alert .close {
+    justify-content: flex-end;
+    cursor: pointer;
+    padding-left: 1rem;
 }
