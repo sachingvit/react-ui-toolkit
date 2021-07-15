@@ -20,12 +20,29 @@ const Alert = WithSkin(
 
         const [show, setShow] = React.useState(true)
 
-        function closeHandler() {
+        const closeHandler = React.useCallback(() => {
             if (typeof closeCB === 'function') {
                 closeCB(props)
-                setShow(false)
             }
-        }
+            setShow(false)
+        }, [closeCB, setShow])
+
+        React.useEffect(() => {
+            let timeoutRef = null
+            if (autoHide) {
+                timeoutRef = setTimeout(() => {
+                    closeHandler()
+                }, autoHideTime)
+            }
+            return () => {
+                if (timeoutRef) {
+                    clearTimeout(timeoutRef)
+                }
+                console.log('component hide >>', props)
+            }
+        }, [autoHide, autoHideTime, closeHandler])
+
+
 
         if (!show) {
             return <NoContent />

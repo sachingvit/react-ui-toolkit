@@ -40,8 +40,9 @@ export const alertComponent = {
             closeEvent: (e) => console.log(`close event `, e)
         },
         {
-            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
-            type: "default"
+            text: "I'll autohide aftre 10 seconds.",
+            type: "default",
+            autoHide: true
         },
         {
             text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",

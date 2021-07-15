@@ -8,7 +8,10 @@
 -    [&check;] Setup
 -    [&check;] Variant setup
 -    [&check;] Control close events (Manual)
--    [&cross;] Control close events (Auto-hide)
+-    [&check;] Control close events (Auto-hide)
+      ### Props 
+      - autoHide [default=false]
+      - autoHideTime [default=10s|1000ms]
 -    [&cross;] Test cases
 
 
