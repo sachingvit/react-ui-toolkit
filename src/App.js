@@ -25,6 +25,9 @@ function App() {
           {React.Children.toArray(
             alertComponent.props.map(alertProps => <Alert {...alertProps}>{`${alertProps?.text || 'Default Alert Text'}`}</Alert>)
           )}
+          <Alert closeEvent={() => alert('close this')}>
+            <span>This is with some <a href="https://www.google.com">Link</a></span>
+          </Alert>
         </DemoSection>
       </div>
 
