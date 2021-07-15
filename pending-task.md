@@ -12,6 +12,7 @@
       ### Props 
       - autoHide [default=false]
       - autoHideTime [default=10s|1000ms]
+-    [&cross;] Clickable content
 -    [&cross;] Test cases
 
 
