@@ -31,4 +31,8 @@
 -   [&cross;] Add Focus style 
 -   [&cross;] Test cases
 
-
+# Progress Bar
+-   [&check;] Setup
+-   [&cross;] Type setup
+-   [&cross:] Multiprogress 
+-   [&cross;] Test cases
