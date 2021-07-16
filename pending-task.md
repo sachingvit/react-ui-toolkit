@@ -34,5 +34,12 @@
 # Progress Bar
 -   [&cross;] Setup
 -   [&cross;] Type setup
--   [&cross:] Multiprogress 
+-   [&cross;] Multiprogress 
 -   [&cross;] Test cases
+
+
+## Theme setup 
+-  ❌ Add provider 
+-  ❌ connect component to provider data
+-  ❌ component isolation mode introduce
+-  ❌ Pallet defination & UX
