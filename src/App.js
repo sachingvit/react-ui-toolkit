@@ -4,12 +4,12 @@ import React from 'react'
 // import { LableInput } from './lib/component/LabelInput/LableInput'
 // import { Badge } from './lib/component/Badge/Badge'
 
-import { Avatar, Badge, LableInput } from './lib/component'
-import { avatarComponent, labelComponent, badgeComponent } from './docProps'
+import { Avatar, Alert, Badge, LableInput } from './lib/component'
+import { alertComponent, avatarComponent, labelComponent, badgeComponent } from './docProps'
 
 
-const DemoSection = ({ children }) => {
-  return <div className="demo-section">{children}</div>
+const DemoSection = ({ children, noFlex }) => {
+  return <div className={`demo-section ${noFlex && `no-flex`}`}>{children}</div>
 }
 
 const ComponentNameDispay = ({ name }) => <p><span>Component</span> {name}</p>
@@ -18,6 +18,18 @@ function App() {
 
   return (
     <div className="App">
+
+      <div className="demo-content-area">
+        <ComponentNameDispay name={`${alertComponent?.name}`} />
+        <DemoSection noFlex={true}>
+          {React.Children.toArray(
+            alertComponent.props.map(alertProps => <Alert {...alertProps}>{`${alertProps?.text || 'Default Alert Text'}`}</Alert>)
+          )}
+          <Alert closeEvent={() => alert('close this')}>
+            <span>This is with some <a href="https://www.google.com">Link</a></span>
+          </Alert>
+        </DemoSection>
+      </div>
 
       <div className="demo-content-area">
         <ComponentNameDispay name={`${avatarComponent?.name}`} />

@@ -1,12 +1,18 @@
 # Avatar
+-   [&check;] Setup
 -   [&cross;] Size prop introduce
 -   [&cross;] overlap feature
 -   [&cross;] Test cases
 
 # Alert 
--    [&cross;] Setup
--    [&cross;] Variant setup
--    [&cross;] Control close events (Auto-hide/ Manual)
+-    [&check;] Setup
+-    [&check;] Variant setup
+-    [&check;] Control close events (Manual)
+-    [&check;] Control close events (Auto-hide)
+      ### Props 
+      - autoHide [default=false]
+      - autoHideTime [default=10s|1000ms]
+-    [&check;] Clickable content
 -    [&cross;] Test cases
 
 
@@ -25,4 +31,15 @@
 -   [&cross;] Add Focus style 
 -   [&cross;] Test cases
 
+# Progress Bar
+-   [&cross;] Setup
+-   [&cross;] Type setup
+-   [&cross;] Multiprogress 
+-   [&cross;] Test cases
 
+
+## Theme setup 
+-  ❌ Add provider 
+-  ❌ connect component to provider data
+-  ❌ component isolation mode introduce
+-  ❌ Pallet defination & UX

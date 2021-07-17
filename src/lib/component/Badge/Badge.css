@@ -9,57 +9,81 @@ a.badge {
     text-decoration: none;
 }
 
-.badge.primary {
-    color: white;
+.primary {
     background-color: rgb(21, 160, 225);
+    color: white;
 }
 
-.badge.primary:hover {
+.primary:hover {
     background-color: rgb(9, 149, 214);
 }
 
-.badge.secondary {
+.secondary {
     color: white;
     background-color: rgb(80, 81, 82);
 }
 
-.badge.secondary:hover {
+.secondary:hover {
     background-color: rgb(31, 32, 32);
 }
 
-.badge.default {
-    border: 1px solid rgb(90, 87, 87);
-    background-color: rgb(255, 255, 255);
+.default {
     color: #323232;
+    background-color: rgb(255, 255, 255);
 }
 
-.badge.default:hover {
+.default:hover {
     background-color: rgb(238, 232, 232);
 }
 
-.badge.success {
+.success {
     background-color: rgb(68, 131, 52);
-    color: #fff;
+    color: white;
 }
 
-.badge.success:hover {
+.success:hover {
     background-color: rgb(61, 126, 45);
 }
 
-.badge.danger {
+.danger {
     background-color: rgb(211, 52, 52);
-    color: #fff;
+    color: white;
 }
 
-.badge.danger:hover {
+.danger:hover {
     background-color: rgb(209, 38, 38);
 }
 
-.badge.warning {
+.warning {
     background-color: rgb(250, 237, 60);
     color: #323232;
 }
 
-.badge.warning:hover {
+.warning:hover {
     background-color: rgb(225, 213, 34);
+}
+
+.badge.success {
+    color: #fff;
+}
+
+.badge.default {
+    border: 1px solid rgb(90, 87, 87);
+    color: #323232;
+}
+
+.badge.danger {
+    color: #fff;
+}
+
+.badge.warning {
+    color: #323232;
+}
+
+.badge.primary {
+    color: white;
+}
+
+.badge.secondary {
+    color: white;
 }

@@ -30,6 +30,38 @@ export const avatarComponent = {
     ]
 }
 
+export const alertComponent = {
+    name: 'Alert',
+    props: [
+        undefined,
+        {
+            type: "primary",
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            closeEvent: (e) => console.log(`close event `, e)
+        },
+        {
+            text: "I'll autohide aftre 10 seconds.",
+            type: "default",
+            autoHide: true
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "success"
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "danger"
+        },
+        {
+            text: "Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.Lorem ipsum dolor sit amit.",
+            type: "warning"
+        },
+        {
+            type: "primary"
+        }
+    ]
+}
+
 export const badgeComponent = {
     name: "Badge",
     props: [

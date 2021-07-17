@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import './Badge.css'
 
 
-const Badge = WithBadge(function Badge(props) {
+const Badge = WithSkin(function Badge(props) {
     let {
         tag: Tag,
         text: badgeText,
@@ -26,7 +26,7 @@ const Badge = WithBadge(function Badge(props) {
 })
 
 
-function WithBadge(Component) {
+export function WithSkin(Component) {
     return (props) => {
         const classes = `${props.className || Component.name.toLowerCase()} ${props.type}`
         return (
